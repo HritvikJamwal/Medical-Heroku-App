@@ -38,7 +38,7 @@
             image: base64Image
         }
             console.log(message);
-            $.post("http://127.0.0.1:5000/predictmalaria", JSON.stringify(message), function(response){
+            $.post("https://medico-predictor.herokuapp.com/predictmalaria", JSON.stringify(message), function(response){
                 console.log(response);
                 $('#final-prediction').text(response);
             });
