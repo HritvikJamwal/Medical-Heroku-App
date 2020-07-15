@@ -13,8 +13,7 @@ from cv2 import imread
 import numpy as np
 from tensorflow.keras.models import load_model
 import cv2
-from keras.preprocessing.image import ImageDataGenerator
-from keras.preprocessing.image import img_to_array
+from tensorflow.keras.preprocessing import image
 from flask import request, jsonify, Flask, render_template
 import base64
 import io
